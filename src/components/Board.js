@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Square from "./Square";
 
 export default function Board({ squares, handleClick }) {
@@ -12,6 +12,7 @@ export default function Board({ squares, handleClick }) {
                 <Square key={i} value={sq} handleClick={() => handleClick(i)} />
               );
             }
+            return "";
           })}
         </div>
         <div className="board-row">
@@ -21,6 +22,7 @@ export default function Board({ squares, handleClick }) {
                 <Square key={i} value={sq} handleClick={() => handleClick(i)} />
               );
             }
+            return "";
           })}
         </div>
         <div className="board-row">
@@ -30,6 +32,7 @@ export default function Board({ squares, handleClick }) {
                 <Square key={i} value={sq} handleClick={() => handleClick(i)} />
               );
             }
+            return "";
           })}
         </div>
       </div>
